@@ -1,0 +1,45 @@
+<view class="flex bottom">
+  <view class="squre">
+    <view bindtap="squire">广场</view>
+  </view>
+  <view class="add">
+    <view class="iconfont icontianjia" bindtap="add"></view>
+  </view>
+  <view class="mine">
+    <view bindtap="mine">我的</view>
+  </view>
+</view>
+
+
+
+
+<view wx:for="{{userInfo}}" class="styl">
+  <view class="first flex">
+    <view class="left">
+      <!-- <image src="{{item.face_url}}"></image> -->
+      <image src="http://pic2.zhimg.com/50/v2-958d33fd4a4de747058adcafdf753074_hd.jpg"></image>
+    </view>
+    <view class="right">
+      <view class="right-top">{{item.username}}</view>
+      <view class="right-bottom">{{item.send_timestamp}}</view>
+    </view>
+  </view>
+
+  <view class="second">
+    <view class="secondline">
+      {{item.content}}
+    </view>
+  </view>
+
+  <view class="third flex" data-id="{{index}}" bindtap="dianzan">
+    <view class="iconfont icondianzan"></view>
+    <view class="third-right">{{item.totle_likes}}</view>
+  </view>
+
+  <view style="background-color:#f7f7f7;height:10rpx"></view>
+
+</view>
+
+<view style="background-color:#f7f7f7;height:160rpx"></view>
+
+

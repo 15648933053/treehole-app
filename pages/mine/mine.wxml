@@ -1,0 +1,36 @@
+<view class="flex bottom">
+	<view class="squre">
+		<view bindtap="squire">广场</view>
+	</view>
+	<view class="add">
+		<view class="iconfont icontianjia" bindtap="add"></view>
+	</view>
+	<view class="mine">
+		<view bindtap="mine">我的</view>
+	</view>
+</view>
+
+<view class="top">
+	<view class="touxiang">
+		<image src="http://pic4.zhimg.com/50/v2-95ce9bf17f832134f8774cf3f6450adf_hd.jpg"></image>
+		<!-- <image src="{{userInfo.image}}"></image> -->
+	</view>
+	<view class="nichen">{{name}}</view>
+
+	<view style="background-color:#eee;height:15rpx"></view>
+
+	<view wx:for="{{userInfo}}">
+		<view class="wodeshudong">
+			<view class="msg">{{item.content}}</view>
+		</view>
+		<view class="dianzan flex">
+			<view class="iconfont icondianzan"></view>
+			<view class="count">{{item.totle_likes}}</view>
+			<view bindtap="delete" data-id="{{index}}" class="delete">删除</view>
+		</view>
+
+		<view style="background-color:#f7f7f7;height:10rpx"></view>
+	</view>
+
+</view>
+<van-dialog id="van-dialog" />

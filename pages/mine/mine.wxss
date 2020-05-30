@@ -1,0 +1,110 @@
+@import "../../iconfont/iconfont.wxss";
+
+page {
+  background-color: #eee;
+}
+.top{
+  background-color: #fff;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  background-color: purple;
+  line-height: 150rpx;
+}
+
+.squre {
+  width: 20%;
+  margin-left: 18%;
+  color: purple;
+  align-items: center;
+}
+
+.squre view{
+  font-size: 38rpx;
+  color: black;
+}
+
+.add {
+  margin-right: 10%;
+  width: 20%;
+  margin-left: 10%;
+}
+
+.add .iconfont {
+  font-size: 100rpx;
+  color: skyblue;
+}
+
+.nichen{
+  padding-top: 15rpx;
+  width: 100%;
+  margin-left: 43%;
+}
+
+.mine {
+  width: 20%;
+  margin-right: 10%;
+  align-items: center;
+}
+
+.mine view{
+  font-size: 38rpx;
+  color: #fff;
+}
+
+
+.touxiang{
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.touxiang image{
+  padding-top: 60rpx;
+  margin-left: 38%;
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.dianzan{
+  width: 100%;
+  padding-top: 15rpx;
+}
+.dianzan .iconfont{
+  font-size: 45rpx;
+  margin-left: 10%;
+  color: purple;
+}
+
+.dianzan .count{
+  padding-left: 10rpx;
+  font-size: 45rpx;
+  color: purple;
+}
+
+.dianzan .delete{
+  background-color: red;
+  margin-left: 50%;
+  width: 20%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7rpx;
+}
+
+.wodeshudong{
+  width: 100%;
+}
+
+.wodeshudong .msg{
+  word-break: break-all;
+  width: 80%;
+  padding-top: 15rpx;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: auto;
+}

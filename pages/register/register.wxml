@@ -1,0 +1,38 @@
+<view>
+	<view class="userName">
+		<van-cell-group>
+			<van-field label="用户名" type="text"  placeholder="请输入用户名" border="{{ false }}" bind:input="setUserName" />
+		</van-cell-group>
+	</view>
+
+	<view class="tel">
+		<van-cell-group>
+			<van-field label="手机号：" type="number" placeholder="请输入手机号" border="{{ false }}" bind:input="setTel" />
+		</van-cell-group>
+	</view>
+
+	<view class="password">
+		<van-cell-group>
+			<van-field label="密码：" type="password"  placeholder="请输入密码" border="{{ false }}" bind:input="setPassword" />
+		</van-cell-group>
+	</view>
+
+	<view class="password">
+		<van-cell-group>
+			<van-field label="确认密码：" type="password"  placeholder="请再次输入密码" border="{{ false }}" bind:input="setPasswordAsc" />
+		</van-cell-group>
+	</view>
+
+	<view class="btn" bindtap="register">
+		<button class="btn1">注册</button> 
+	</view>
+</view>
+
+
+<view class="top">
+	<navigator url="../login/login">
+		<text>已有账号，点我登录</text>
+	</navigator>
+</view>
+
+<van-notify id="van-notify" />
